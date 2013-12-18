@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vestorly Acceptance Tests
 
 Blackbox acceptance tests.
@@ -37,3 +38,9 @@ To debug a specific step call `save_and_open_page` within the step.
 
 * <http://cukes.info> (for general cucumber information)
 * <http://github.com/jnicklas/capybara> (for actions such as click_link, click_button, etc...)
+=======
+vestorly
+========
+
+vestorly
+>>>>>>> 0d9fc20e4f6e77db77abaf344f1c09d55960a49a
