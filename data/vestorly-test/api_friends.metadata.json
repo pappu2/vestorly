@@ -1,0 +1,1 @@
+{ "options" : { "create" : "api_friends" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "vestorly-test.api_friends", "name" : "_id_" } ] }

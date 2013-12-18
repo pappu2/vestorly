@@ -1,0 +1,11 @@
+test: &test
+    #host: localhost
+    #database: vestorly-test
+  <% if !ENV['MONGO_TEST_URI'].nil? && !ENV['MONGO_TEST_URI'].blank? %>
+    uri: <%= ENV['MONGO_TEST_URI'] %>
+  <% else %>
+    uri: mongodb://vestorly-harry:abcd1234@ds053688.mongolab.com:53688/vestorly-acceptance
+  <% end %>
+
+cucumber:
+    <<: *test

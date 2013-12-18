@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Tests report</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+  
+<body>
+
+<div class="testsSummary">
+	
+	<div class="centered">	
+	<table  class = "MyClass">
+		
+		<caption>Summary Report</caption>
+		<tr>
+			<th>Summary</th>
+			<th>$todayDate</th>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td> # of tests</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>$totalNb</td>
+		</tr>
+		<tr>
+			<td>Passed</td>
+			<td>$passedNb</td>
+		</tr>
+		<tr>
+			<td>Failed</td>
+			<td>$failedNb</td>
+		</tr>
+		
+		<tr style="	background-color: yellow;">
+			<td>Pass Rate</td>
+			<td>$passedRate %</td>
+		</tr>
+		<tfoot> </tfoot>
+	</table>
+	</div>
+	
+	<span class="summary">Total tests: $totalNb</span>
+	
+	#if( $failedNb > 0)
+	<div class="testSummaryFailed">
+		
+		#if( $failedNb > 0 )
+			<span class="failedBad">
+		#else
+			<span class="failed">
+		#end
+		failed: $failedNb</span>
+		
+	#elseif( $failedNb == 0 && $skippedNb > 0)
+	<div class="testSummarySkipped">
+		
+		#if( $skippedNb > 0)
+			<span class="skippedBad">
+		#else
+			<span class="skipped">
+		#end
+			skipped: $skippedNb</span>
+			
+	
+	#else	
+	<div class="testSummaryPassed">
+		
+		#if( $passedNb == $totalNb)
+			<span class="passedOk">
+		#else
+			<span class="passed">
+		#end
+		passed: $passedNb</span>
+
+	#end
+	
+	</div>
+	
+	
+	#if( $failedNb > 0 )
+	<div class="failedTests"><span class="failedTestsTitle">FAILED TESTS</span>
+		#foreach( $failedClass in $failedTests.keySet() )
+			<span class="failedTestClass">$failedClass</span>
+			#foreach ( $failedMethod in $failedTests.get($failedClass))
+				<span class="failedTestMethod">$failedMethod</span>
+			#end
+		#end
+	</div>
+	#end
+
+	#if( $skippedNb > 0 )
+	<div class="skippedTests"><span class="skippedTestsTitle">SKIPPED TESTS</span>
+		#foreach( $skippedClass in $skippedTests.keySet() )
+			<span class="skippedTestClass">$skippedClass</span>
+			#foreach ( $skippedMethod in $skippedTests.get($skippedClass))
+				<span class="skippedTestMethod">$skippedMethod</span>
+			#end
+		#end
+	</div>
+	#end
+	
+	#if( $passedNb > 0 )
+	<div class="failedTests"><span class="failedTestsTitle">PASSED TESTS</span>
+		#foreach( $passedClass in $passedTests.keySet() )
+			<span class="failedTestClass">$passedClass</span>
+			#foreach ( $passedMethod in $passedTests.get($passedClass))
+				<span class="failedTestMethod">$passedMethod</span>
+			#end
+		#end
+	</div>
+	#end
+
+</div>
+
+</body>
+</html>

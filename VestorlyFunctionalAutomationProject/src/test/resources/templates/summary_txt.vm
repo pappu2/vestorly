@@ -1,0 +1,24 @@
+all tests: $totalNb
+failed: $failedNb
+passed: $passedNb
+skipped: $skippedNb
+
+#if( $failedNb > 0 )
+FAILED TESTS:
+#foreach( $failedClass in $failedTests.keySet() )
+$failedClass
+#foreach ( $failedMethod in $failedTests.get($failedClass))
+	$failedMethod
+#end
+#end
+#end
+
+#if( $skippedNb > 0 )
+SKIPPED TESTS:
+#foreach( $skippedClass in $skippedTests.keySet() )
+$skippedClass
+#foreach ( $skippedMethod in $skippedTests.get($skippedClass))
+	$skippedMethod
+#end
+#end
+#end

@@ -1,0 +1,1 @@
+{ "options" : { "create" : "some_purchasers" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "vestorly-test.some_purchasers", "name" : "_id_" } ] }

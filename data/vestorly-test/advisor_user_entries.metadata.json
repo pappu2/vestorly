@@ -1,0 +1,1 @@
+{ "options" : { "create" : "advisor_user_entries" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "vestorly-test.advisor_user_entries", "name" : "_id_" } ] }

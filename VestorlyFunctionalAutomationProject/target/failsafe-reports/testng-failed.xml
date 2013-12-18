@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [Vestorly Automation ]" parallel="tests">
+  <parameter name="selenium.url" value="https://vestorly-test-auto.herokuapp.com"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <listeners>
+    <listener class-name="com.vestorly.utils.CustomListnerTestNG"/>
+  </listeners>
+  <test name="Selenium - AdvisorApply Feature(failed)" parallel="tests">
+    <classes>
+      <class name="com.vestorly.verifications.Index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="advisorApply"/>
+        </methods>
+      </class> <!-- com.vestorly.verifications.Index -->
+    </classes>
+  </test> <!-- Selenium - AdvisorApply Feature(failed) -->
+  <test name="Selenium - Admin Approved Advisor Feature(failed)" parallel="tests">
+    <classes>
+      <class name="com.vestorly.verifications.Index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="signUpViaEmail"/>
+          <include name="advisorApply"/>
+        </methods>
+      </class> <!-- com.vestorly.verifications.Index -->
+    </classes>
+  </test> <!-- Selenium - Admin Approved Advisor Feature(failed) -->
+  <test name="Selenium - Advisior LinkedIn Invite(failed)" parallel="tests">
+    <classes>
+      <class name="com.vestorly.verifications.Index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="advisorSignup"/>
+          <include name="signUpViaEmail"/>
+          <include name="advisorApply"/>
+        </methods>
+      </class> <!-- com.vestorly.verifications.Index -->
+    </classes>
+  </test> <!-- Selenium - Advisior LinkedIn Invite(failed) -->
+</suite> <!-- Failed suite [Vestorly Automation ] -->

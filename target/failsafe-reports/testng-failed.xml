@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [Vestorly Automation ]" parallel="tests">
+  <parameter name="selenium.url" value="https://vestorly-dev.herokuapp.com/"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <listeners>
+    <listener class-name="com.vestorly.utils.CustomListnerTestNG"/>
+  </listeners>
+  <test name="Selenium - SignUp via Email Feature(failed)" parallel="tests">
+    <classes>
+      <class name="com.vestorly.verifications.Index">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="signUpViaEmail"/>
+          <include name="fetchSuiteConfiguration"/>
+        </methods>
+      </class> <!-- com.vestorly.verifications.Index -->
+    </classes>
+  </test> <!-- Selenium - SignUp via Email Feature(failed) -->
+</suite> <!-- Failed suite [Vestorly Automation ] -->

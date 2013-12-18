@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Feature-UAT"Advisor Signup,TestCase Name: 1.2 Advisor Signup Feature.]]>
+    </line>
+    <line>
+      <![CDATA[<br></br> Step 1 : Enter the URL in browser address bar and hit enter.]]>
+    </line>
+    <line>
+      <![CDATA[Login with valid credentials.]]>
+    </line>
+    <line>
+      <![CDATA[Verify Logout Feature]]>
+    </line>
+  </reporter-output>
+  <suite name="Vestorly Automation " duration-ms="137502" started-at="2013-11-20T13:49:39Z" finished-at="2013-11-20T13:51:56Z">
+    <groups>
+    </groups>
+    <test name="Selenium - SignUp via Email Feature" duration-ms="137502" started-at="2013-11-20T13:49:39Z" finished-at="2013-11-20T13:51:56Z">
+      <class name="com.vestorly.verifications.Index">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.vestorly.verifications.Index@7d2452e8]" name="fetchSuiteConfiguration" is-config="true" duration-ms="12" started-at="2013-11-20T19:19:39Z" finished-at="2013-11-20T19:19:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5dde45e2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.vestorly.verifications.Index@7d2452e8]" name="setUp" is-config="true" duration-ms="50009" started-at="2013-11-20T19:19:39Z" finished-at="2013-11-20T19:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vestorly.verifications.Index.signUpViaEmail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signUpViaEmail()[pri:0, instance:com.vestorly.verifications.Index@7d2452e8]" name="signUpViaEmail" duration-ms="56583" started-at="2013-11-20T19:20:29Z" finished-at="2013-11-20T19:21:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Feature-UAT"Advisor Signup,TestCase Name: 1.2 Advisor Signup Feature.]]>
+            </line>
+            <line>
+              <![CDATA[<br></br> Step 1 : Enter the URL in browser address bar and hit enter.]]>
+            </line>
+            <line>
+              <![CDATA[Login with valid credentials.]]>
+            </line>
+            <line>
+              <![CDATA[Verify Logout Feature]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpViaEmail -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.vestorly.verifications.Index@7d2452e8]" name="tearDown" is-config="true" duration-ms="30878" started-at="2013-11-20T19:21:25Z" finished-at="2013-11-20T19:21:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUpViaEmail status=SUCCESS method=Index.signUpViaEmail()[pri:0, instance:com.vestorly.verifications.Index@7d2452e8] output=Feature-UAT"Advisor Signup,TestCase Name: 1.2 Advisor Signup Feature.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vestorly.verifications.Index -->
+    </test> <!-- Selenium - SignUp via Email Feature -->
+  </suite> <!-- Vestorly Automation  -->
+</testng-results>
